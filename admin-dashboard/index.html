@@ -3,9 +3,358 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
     <title>Admin Dashboard</title>
   </head>
   <body>
-    
+    <div class="sidebar">
+      <div class="logo">
+        <img class="icon" src="./assets/view-dashboard.svg" alt="Dashboard" />
+        <h1>Dashboard</h1>
+      </div>
+      <nav>
+        <a href="#" class="nav-item">
+          <img class="icon" src="./assets/home.svg" alt="Home" />
+          <p>Home</p>
+        </a>
+        <a href="#" class="nav-item">
+          <img
+            class="icon"
+            src="./assets/card-account-details-outline.svg"
+            alt="Profile"
+          />
+          <p>Profile</p>
+        </a>
+        <a href="#" class="nav-item">
+          <img class="icon" src="./assets/message-reply.svg" alt="Messages" />
+          <p>Messages</p>
+        </a>
+        <a href="#" class="nav-item">
+          <img class="icon" src="./assets/clock-time-three.svg" alt="History" />
+          <p>History</p>
+        </a>
+        <a href="#" class="nav-item">
+          <img class="icon" src="./assets/note-multiple.svg" alt="Tasks" />
+          <p>Tasks</p>
+        </a>
+        <a href="#" class="nav-item communities">
+          <img
+            class="icon"
+            src="./assets/account-group.svg"
+            alt="Communities"
+          />
+          <p>Communities</p>
+        </a>
+        <a href="#" class="nav-item">
+          <img class="icon" src="./assets/cog.svg" alt="Settings" />
+          <p>Settings</p>
+        </a>
+        <a href="#" class="nav-item">
+          <img class="icon" src="./assets/help-box.svg" alt="Support" />
+          <p>Support</p>
+        </a>
+        <a href="#" class="nav-item">
+          <img class="icon" src="./assets/shield-check.svg" alt="Privacy" />
+          <p>Privacy</p>
+        </a>
+      </nav>
+    </div>
+    <div class="content">
+      <header>
+        <div class="row">
+          <div class="search">
+            <img class="icon" src="./assets/magnify.svg" alt="Search" />
+            <input type="search" name="" id="" />
+          </div>
+          <div class="account">
+            <img
+              class="icon"
+              src="./assets/bell-ring.svg"
+              alt="Notifications"
+            />
+            <div class="user">
+              <img
+                class="user-img small"
+                src="https://avatars.githubusercontent.com/u/48354258?v=4"
+                alt="Enes CEYLAN"
+              />
+              <h3>Enes Ceylan</h3>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="user">
+            <img
+              class="user-img"
+              src="https://avatars.githubusercontent.com/u/48354258?v=4"
+              alt="Enes CEYLAN"
+            />
+            <div>
+              <h4>Hi there,</h4>
+              <h2>Enes Ceylan (@enesceylan)</h2>
+            </div>
+          </div>
+          <div class="actions">
+            <button>New</button>
+            <button>Upload</button>
+            <button>Share</button>
+          </div>
+        </div>
+      </header>
+      <main>
+        <section class="projects">
+          <h2 class="card-title">Your projects</h2>
+          <div class="projects-grid">
+            <div class="project">
+              <div class="project-content">
+                <h5>Project name</h5>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum
+                  voluptas quasi totam laborum. Dolores culpa dolorem,
+                  reprehenderit quos labore nobis!
+                </p>
+              </div>
+              <div class="buttons">
+                <button>
+                  <img
+                    class="icon"
+                    src="./assets/star-plus-outline.svg"
+                    alt="Star project"
+                  />
+                </button>
+                <button>
+                  <img
+                    class="icon"
+                    src="./assets/eye-plus-outline.svg"
+                    alt=""
+                  />
+                </button>
+                <button>
+                  <img class="icon" src="./assets/source-fork.svg" alt="" />
+                </button>
+              </div>
+            </div>
+            <div class="project">
+              <div class="project-content">
+                <h5>Project name</h5>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum
+                  voluptas quasi totam laborum. Dolores culpa dolorem,
+                  reprehenderit quos labore nobis!
+                </p>
+              </div>
+              <div class="buttons">
+                <button>
+                  <img
+                    class="icon"
+                    src="./assets/star-plus-outline.svg"
+                    alt="Star project"
+                  />
+                </button>
+                <button>
+                  <img
+                    class="icon"
+                    src="./assets/eye-plus-outline.svg"
+                    alt=""
+                  />
+                </button>
+                <button>
+                  <img class="icon" src="./assets/source-fork.svg" alt="" />
+                </button>
+              </div>
+            </div>
+            <div class="project">
+              <div class="project-content">
+                <h5>Project name</h5>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum
+                  voluptas quasi totam laborum. Dolores culpa dolorem,
+                  reprehenderit quos labore nobis!
+                </p>
+              </div>
+              <div class="buttons">
+                <button>
+                  <img
+                    class="icon"
+                    src="./assets/star-plus-outline.svg"
+                    alt="Star project"
+                  />
+                </button>
+                <button>
+                  <img
+                    class="icon"
+                    src="./assets/eye-plus-outline.svg"
+                    alt=""
+                  />
+                </button>
+                <button>
+                  <img class="icon" src="./assets/source-fork.svg" alt="" />
+                </button>
+              </div>
+            </div>
+            <div class="project">
+              <div class="project-content">
+                <h5>Project name</h5>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum
+                  voluptas quasi totam laborum. Dolores culpa dolorem,
+                  reprehenderit quos labore nobis!
+                </p>
+              </div>
+              <div class="buttons">
+                <button>
+                  <img
+                    class="icon"
+                    src="./assets/star-plus-outline.svg"
+                    alt="Star project"
+                  />
+                </button>
+                <button>
+                  <img
+                    class="icon"
+                    src="./assets/eye-plus-outline.svg"
+                    alt=""
+                  />
+                </button>
+                <button>
+                  <img class="icon" src="./assets/source-fork.svg" alt="" />
+                </button>
+              </div>
+            </div>
+            <div class="project">
+              <div class="project-content">
+                <h5>Project name</h5>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum
+                  voluptas quasi totam laborum. Dolores culpa dolorem,
+                  reprehenderit quos labore nobis!
+                </p>
+              </div>
+              <div class="buttons">
+                <button>
+                  <img
+                    class="icon"
+                    src="./assets/star-plus-outline.svg"
+                    alt="Star project"
+                  />
+                </button>
+                <button>
+                  <img
+                    class="icon"
+                    src="./assets/eye-plus-outline.svg"
+                    alt=""
+                  />
+                </button>
+                <button>
+                  <img class="icon" src="./assets/source-fork.svg" alt="" />
+                </button>
+              </div>
+            </div>
+            <div class="project">
+              <div class="project-content">
+                <h5>Project name</h5>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum
+                  voluptas quasi totam laborum. Dolores culpa dolorem,
+                  reprehenderit quos labore nobis!
+                </p>
+              </div>
+              <div class="buttons">
+                <button>
+                  <img
+                    class="icon"
+                    src="./assets/star-plus-outline.svg"
+                    alt="Star project"
+                  />
+                </button>
+                <button>
+                  <img
+                    class="icon"
+                    src="./assets/eye-plus-outline.svg"
+                    alt=""
+                  />
+                </button>
+                <button>
+                  <img class="icon" src="./assets/source-fork.svg" alt="" />
+                </button>
+              </div>
+            </div>
+            <div class="project">
+              <div class="project-content">
+                <h5>Project name</h5>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum
+                  voluptas quasi totam laborum. Dolores culpa dolorem,
+                  reprehenderit quos labore nobis!
+                </p>
+              </div>
+              <div class="buttons">
+                <button>
+                  <img
+                    class="icon"
+                    src="./assets/star-plus-outline.svg"
+                    alt="Star project"
+                  />
+                </button>
+                <button>
+                  <img
+                    class="icon"
+                    src="./assets/eye-plus-outline.svg"
+                    alt=""
+                  />
+                </button>
+                <button>
+                  <img class="icon" src="./assets/source-fork.svg" alt="" />
+                </button>
+              </div>
+            </div>
+            <div class="project">
+              <div class="project-content">
+                <h5>Project name</h5>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum
+                  voluptas quasi totam laborum. Dolores culpa dolorem,
+                  reprehenderit quos labore nobis!
+                </p>
+              </div>
+              <div class="buttons">
+                <button>
+                  <img
+                    class="icon"
+                    src="./assets/star-plus-outline.svg"
+                    alt="Star project"
+                  />
+                </button>
+                <button>
+                  <img
+                    class="icon"
+                    src="./assets/eye-plus-outline.svg"
+                    alt=""
+                  />
+                </button>
+                <button>
+                  <img class="icon" src="./assets/source-fork.svg" alt="" />
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div class="right">
+          <section class="announcements">
+            <h2 class="card-title">Announcements</h2>
+          </section>
+          <section class="trending">
+            <h2 class="card-title">Trending</h2>
+          </section>
+        </div>
+      </main>
+    </div>
   </body>
 </html>
