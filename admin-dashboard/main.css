@@ -201,7 +201,7 @@ main {
 
   height: calc(100vh - 11rem);
 
-  padding: 2rem 1rem;
+  padding: 2rem 1.5rem;
   box-sizing: border-box;
 }
 
@@ -218,7 +218,7 @@ main {
   grid-auto-rows: 14rem;
   gap: 1rem;
 
-  max-height: 679px;
+  height: 43rem;
 
   flex-grow: 1;
 
@@ -282,7 +282,73 @@ section > .card-title {
 .right {
   display: grid;
   grid-template-columns: 7fr;
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-rows: repeat(2, minmax(200px, auto));
   grid-row-gap: 1rem;
+}
+
+.announcements,
+.trending {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.announcements-wrapper,
+.trending-wrapper {
+  flex-grow: 1;
+
+  padding: 1rem 2rem;
+
+  background-color: var(--main);
+
+  border-radius: 1rem;
+
+  box-sizing: border-box;
+}
+
+.announcement {
+  padding: 1rem 0;
+}
+
+.announcement:not(:last-child) {
+  border-bottom: 1px solid #bbb;
+}
+
+.announcement > h6 {
+  font-size: 0.925rem;
+  font-weight: 700;
+
+  margin-bottom: 0.5rem;
+}
+
+.announcement > p {
+  color: #777;
+  font-size: 0.825rem;
+}
+
+.trending-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.trending-user {
+  display: flex;
+  align-items: center;
+
+  gap: 1rem;
+}
+
+.trending-user > img {
+  width: 3rem;
+}
+
+.user > *:first-child {
+  margin-bottom: 0.25rem;
+}
+
+.user > p {
+  color: #777;
+  font-size: 0.875rem;
 }
 /* #endregion */
