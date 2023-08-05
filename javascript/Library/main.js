@@ -1,3 +1,5 @@
+let library = [];
+
 function Book(title, author, pages, read) {
     this.title = title;
     this.author = author;
@@ -7,4 +9,8 @@ function Book(title, author, pages, read) {
     this.info = function() {
         return `${title} by ${author}, ${pages} pages, ${read ? "read" : "not read yet"}.`;
     }
+}
+
+function addBook() {
+    //add book to library
 }

@@ -4,10 +4,59 @@
     padding: 0;
 
     box-sizing: border-box;
+
+    font-family: 'Poppins', sans-serif;
 }
 
 body {
     width: 100vw;
     height: 100vh;
+
+    padding: 10% 15%;
 }
 
+main {
+    width: 100%;
+}
+
+section {
+    padding: 1rem 0;
+}
+
+fieldset {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+
+    padding: 1rem 0.5rem;
+    margin-bottom: 1rem;
+}
+
+legend {
+    font-size: 1.125rem;
+    
+    padding: 0 1rem;
+}
+
+fieldset>div:not(.read-status) {
+    flex-grow: 2;
+}
+
+.read-status {
+    flex-grow: 1;
+}
+
+fieldset>div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+input {
+    padding: 0.5rem;
+
+    outline: none;
+
+    border: 1px solid black;
+    border-radius: 0.5rem;
+}
