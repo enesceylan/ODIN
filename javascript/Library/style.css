@@ -34,7 +34,7 @@ fieldset {
 
 legend {
     font-size: 1.125rem;
-    
+
     padding: 0 1rem;
 }
 
@@ -52,6 +52,10 @@ fieldset>div {
     gap: 0.5rem;
 }
 
+fieldset>div:last-of-type {
+    align-items: flex-start;
+}
+
 input {
     padding: 0.5rem;
 
@@ -59,4 +63,45 @@ input {
 
     border: 1px solid black;
     border-radius: 0.5rem;
+}
+
+input[type=checkbox] {
+    margin: auto 0;
+
+    width: 1.125rem;
+    height: 1.125rem;
+}
+
+table {
+    width: 100%;
+
+    border-collapse: collapse;
+}
+
+tr {
+    border-bottom: 1px solid black;
+}
+
+th, td {
+    padding: 1rem 0;
+
+    text-align: start;
+}
+
+th:nth-child(1), th:nth-child(2) {
+    width: 37.5%;
+}
+
+th:nth-child(3) {
+    width: 15%;
+}
+
+th:last-child {
+    width: 10%;
+}
+
+.delete-btn {
+    width: 2.5rem;
+
+    cursor: pointer;
 }
