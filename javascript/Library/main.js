@@ -30,6 +30,7 @@ function createRow(book) {
 
     // Create row
     const row = document.createElement("tr");
+    row.classList.add("glass");
 
     // Create cells
     const title = document.createElement("td");
@@ -46,6 +47,7 @@ function createRow(book) {
     pages.innerText = book.pages;
     status.appendChild(statusBtn);
     statusBtn.innerText = book.read ? "read" : "not read";
+    statusBtn.addEventListener("click", toggleReadStatus);
     trash.appendChild(trashImg);
     trash.addEventListener("click", removeBook);
     trashImg.classList.add("delete-btn");
@@ -84,11 +86,7 @@ function addBook(book) {
 
 // remove book from library
 function removeBook(e) {
-    const tbody = document.querySelector("tbody");
-    const row = e.target.parentElement.parentElement;
-
-    // Get index of element in table body
-    const idx = Array.from(tbody.children).indexOf(row);
+    const idx = getItemIndex(e);
     // Delete element from table
     library.splice(idx, 1);
     // Remove element from library array
@@ -97,4 +95,21 @@ function removeBook(e) {
 
     // Update table display
     displayLibrary();
+}
+
+// toggle read status of a book
+function toggleReadStatus(e) {
+    const idx = getItemIndex(e);
+
+    library[idx].read = !library[idx].read;
+    e.target.innerText = library[idx].read ? "read" : "not read";
+}
+
+// find index of element in table
+function getItemIndex(e) {
+    const tbody = document.querySelector("tbody");
+    const row = e.target.parentElement.parentElement;
+
+    // Get index of element in table body
+    return Array.from(tbody.children).indexOf(row);
 }

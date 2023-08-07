@@ -14,7 +14,7 @@
 
 <body>
     <header>
-        <h1></h1>
+        <h1>Library</h1>
         <p>This project is made as an assignment for <a href="www.theodinproject.com">The Odin Project</a>.</p>
         <p>To see how this project was made, you can view the <a
                 href="https://github.com/enesceylan/ODIN/tree/main/javascript/Library">Github Repository</a>.
@@ -27,28 +27,28 @@
                     <legend>Book Details</legend>
                     <div>
                         <label for="title">Book</label>
-                        <input type="text" name="title" id="title" placeholder="Enter book title" required>
+                        <input class="glass" type="text" name="title" id="title" placeholder="Enter book title" required>
                     </div>
                     <div>
                         <label for="author">Author</label>
-                        <input type="text" name="author" id="author" placeholder="Author name" minlength="2" required pattern="[a-zA-Z\s]+">
+                        <input class="glass" type="text" name="author" id="author" placeholder="Author name" minlength="2" required pattern="[a-zA-Z\s]+">
                     </div>
                     <div class="pages">
                         <label for="pages">Pages</label>
-                        <input type="number" name="pages" id="pages" min="0" max="9999">
+                        <input class="glass" type="number" name="pages" id="pages" min="0" max="9999">
                     </div>
                     <div class="read-status">
                         <label for="read">Read</label>
                         <input type="checkbox" name="read" id="read" value="read">
                     </div>
                 </fieldset>
-                <button type="submit">Save Entry</button>
+                <button class="glass save-btn" type="submit">Save Entry</button>
             </form>
         </section>
         <section>
             <table>
                 <thead>
-                    <tr>
+                    <tr class="glass">
                         <th>Title</th>
                         <th>Author</th>
                         <th>Pages</th>
