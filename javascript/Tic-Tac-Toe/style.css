@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+
+    font-family: 'Press Start 2P', cursive;
+}
+
+body,
+main {
+    width: 100vw;
+    height: 100vh;
+}
+
+.centered-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    padding: 10% 15%;
+}
+
+/* #region Play Screen */
+header {
+    flex-direction: column;
+
+    gap: 4rem;
+}
+
+h1 {
+    font-size: 6vw;
+}
+
+header>button {
+    padding: 1.5rem;
+    border: none;
+    background: none;
+
+    font-size: 3vw;
+
+    cursor: pointer;
+    
+    transition: all 200ms ease-out;
+}
+
+header>button:hover {
+    font-size: 3.25vw;
+    transform: translateY(-25%);
+}
+
+header>button>strong {
+    transition: color 200ms ease-out;
+}
+
+header>button:hover>strong {
+    color: red;
+}
+
+/* #endregion */
