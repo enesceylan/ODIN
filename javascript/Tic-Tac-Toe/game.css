@@ -1,0 +1,72 @@
+/* #region Page main components */
+form {
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.player-option-container {
+    gap: 2rem;
+}
+
+.player-option {
+    width: 12.5vw;
+    padding: 0.5rem 0;
+
+    border: 0.25rem solid black;
+    border-radius: 0.5rem;
+
+    background-color: inherit;
+
+    text-transform: uppercase;
+
+    cursor: pointer;
+
+    transition: all 200ms ease-out;
+}
+
+.player-option.player:hover,
+.player-option.player.active {
+    border-color: blue;
+    color: blue;
+}
+
+.player-option.ai:hover,
+.player-option.ai.active {
+    border-color: red;
+    color: red;
+}
+
+#name {
+    border: none;
+    outline: none;
+
+    font-size: 4vw;
+    text-align: center;
+}
+
+.hide {
+    display: none;
+}
+
+#game-page {
+    flex-direction: column;
+    gap: 2rem;
+}
+
+#match-title {
+    font-size: 3vw;
+}
+
+h2 {
+    font-size: 2.5vw;
+}
+
+/* #endregion */
+
+
+/* #region Game board */
+.game-board {
+    display: grid;
+}
+
+/* #endregion */

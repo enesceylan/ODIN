@@ -8,12 +8,34 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-    <script src="game.js"></script>
-    <title></title>
+    <script src="game.js" defer></script>
+    <title>Let's Play! 👾</title>
 </head>
 <body>
     <main class="centered-flex">
-        
+        <form action="" id="name-form" class="centered-flex" autocomplete="off">
+            <div class="centered-flex player-option-container">
+                <button id="player" class="player-option player">player</button>
+                <button id="ai" class="player-option ai active">ai</button>
+            </div>
+            <label for="name">Choose your name...</label>
+            <input type="text" name="name" id="name" autofocus>
+        </form>
+        <section id="game-page" class="centered-flex hide">
+            <h1 id="match-title"></h1>
+            <h2><span id="player-score">0</span> : <span id="ai-score">0</span></h2>
+            <div class="game-board">
+                <button id="field"></button>
+                <button id="field"></button>
+                <button id="field"></button>
+                <button id="field"></button>
+                <button id="field"></button>
+                <button id="field"></button>
+                <button id="field"></button>
+                <button id="field"></button>
+                <button id="field"></button>
+            </div>
+        </section>
     </main>
 </body>
 </html>
