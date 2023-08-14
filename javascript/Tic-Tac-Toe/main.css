@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+
+    font-family: 'Press Start 2P', cursive;
+}
+
+body,
+main {
+    width: 100vw;
+    height: 100vh;
+}
+
+.centered-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    padding: 10% 15%;
+}
